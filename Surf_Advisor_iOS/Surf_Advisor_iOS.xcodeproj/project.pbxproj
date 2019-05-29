@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33467349638BFE3AB78D7A3A /* Pods_Surf_Advisor_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7090212BA92B43D2EC91E46B /* Pods_Surf_Advisor_iOS.framework */; };
+		B80D013D6CA51200D34F2338 /* Pods_Surf_Advisor_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4022B9C5E90AFDAD17C284 /* Pods_Surf_Advisor_iOSTests.framework */; };
 		CBF2CBE22296B2090039D3AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2CBE12296B2090039D3AC /* AppDelegate.swift */; };
 		CBF2CBE42296B2090039D3AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2CBE32296B2090039D3AC /* ViewController.swift */; };
 		CBF2CBE72296B2090039D3AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF2CBE52296B2090039D3AC /* Main.storyboard */; };
@@ -26,6 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		118F7E521C098F763BB41441 /* Pods-Surf_Advisor_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surf_Advisor_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Surf_Advisor_iOSTests/Pods-Surf_Advisor_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		6742B631162F82832F666B13 /* Pods-Surf_Advisor_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surf_Advisor_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Surf_Advisor_iOSTests/Pods-Surf_Advisor_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7090212BA92B43D2EC91E46B /* Pods_Surf_Advisor_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Surf_Advisor_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82A4A2177D1FECF8F2836FCE /* Pods-Surf_Advisor_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surf_Advisor_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Surf_Advisor_iOS/Pods-Surf_Advisor_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A5F84E5DFE3047AA1FCA2CEC /* Pods-Surf_Advisor_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surf_Advisor_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Surf_Advisor_iOS/Pods-Surf_Advisor_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		BF4022B9C5E90AFDAD17C284 /* Pods_Surf_Advisor_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Surf_Advisor_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF2CBDE2296B2090039D3AC /* Surf_Advisor_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surf_Advisor_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF2CBE12296B2090039D3AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBF2CBE32296B2090039D3AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33467349638BFE3AB78D7A3A /* Pods_Surf_Advisor_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B80D013D6CA51200D34F2338 /* Pods_Surf_Advisor_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66E1206459FC462AB2C4918A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82A4A2177D1FECF8F2836FCE /* Pods-Surf_Advisor_iOS.debug.xcconfig */,
+				A5F84E5DFE3047AA1FCA2CEC /* Pods-Surf_Advisor_iOS.release.xcconfig */,
+				6742B631162F82832F666B13 /* Pods-Surf_Advisor_iOSTests.debug.xcconfig */,
+				118F7E521C098F763BB41441 /* Pods-Surf_Advisor_iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A8533BD8E65256693589ABC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7090212BA92B43D2EC91E46B /* Pods_Surf_Advisor_iOS.framework */,
+				BF4022B9C5E90AFDAD17C284 /* Pods_Surf_Advisor_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CBF2CBD52296B2090039D3AC = {
 			isa = PBXGroup;
 			children = (
 				CBF2CBE02296B2090039D3AC /* Surf_Advisor_iOS */,
 				CBF2CBF52296B20C0039D3AC /* Surf_Advisor_iOSTests */,
 				CBF2CBDF2296B2090039D3AC /* Products */,
+				66E1206459FC462AB2C4918A /* Pods */,
+				6A8533BD8E65256693589ABC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBF2CBFB2296B20C0039D3AC /* Build configuration list for PBXNativeTarget "Surf_Advisor_iOS" */;
 			buildPhases = (
+				5A814731B5BBDD4B7BDBB3A4 /* [CP] Check Pods Manifest.lock */,
 				CBF2CBDA2296B2090039D3AC /* Sources */,
 				CBF2CBDB2296B2090039D3AC /* Frameworks */,
 				CBF2CBDC2296B2090039D3AC /* Resources */,
@@ -120,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBF2CBFE2296B20C0039D3AC /* Build configuration list for PBXNativeTarget "Surf_Advisor_iOSTests" */;
 			buildPhases = (
+				EB74A683A35DEED75EE7ECDD /* [CP] Check Pods Manifest.lock */,
 				CBF2CBEE2296B20C0039D3AC /* Sources */,
 				CBF2CBEF2296B20C0039D3AC /* Frameworks */,
 				CBF2CBF02296B20C0039D3AC /* Resources */,
+				3C59469F18D3AC1D5756A544 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +226,79 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C59469F18D3AC1D5756A544 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Surf_Advisor_iOSTests/Pods-Surf_Advisor_iOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Surf_Advisor_iOSTests/Pods-Surf_Advisor_iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A814731B5BBDD4B7BDBB3A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Surf_Advisor_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB74A683A35DEED75EE7ECDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Surf_Advisor_iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CBF2CBDA2296B2090039D3AC /* Sources */ = {
@@ -358,6 +466,7 @@
 		};
 		CBF2CBFC2296B20C0039D3AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A4A2177D1FECF8F2836FCE /* Pods-Surf_Advisor_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +484,7 @@
 		};
 		CBF2CBFD2296B20C0039D3AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F84E5DFE3047AA1FCA2CEC /* Pods-Surf_Advisor_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +502,7 @@
 		};
 		CBF2CBFF2296B20C0039D3AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6742B631162F82832F666B13 /* Pods-Surf_Advisor_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +523,7 @@
 		};
 		CBF2CC002296B20C0039D3AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 118F7E521C098F763BB41441 /* Pods-Surf_Advisor_iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
