@@ -46,6 +46,15 @@
 		CBF2CBF62296B20C0039D3AC /* Surf_Advisor_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Surf_Advisor_iOSTests.swift; sourceTree = "<group>"; };
 		CBF2CBF82296B20C0039D3AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBF2CC03229EDB3A0039D3AC /* beachCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beachCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBF2CC0822A123D80039D3AC /* NotoSansCJKkr-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Thin.otf"; sourceTree = "<group>"; };
+		CBF2CC0922A123D80039D3AC /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		CBF2CC0A22A123D90039D3AC /* NotoSansCJKkr-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Black.otf"; sourceTree = "<group>"; };
+		CBF2CC0B22A123DA0039D3AC /* NotoSansMonoCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMonoCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		CBF2CC0C22A123DA0039D3AC /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		CBF2CC0D22A123DB0039D3AC /* NotoSansMonoCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMonoCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		CBF2CC0E22A123DB0039D3AC /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		CBF2CC0F22A123DC0039D3AC /* NotoSansCJKkr-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Light.otf"; sourceTree = "<group>"; };
+		CBF2CC1022A123DD0039D3AC /* NotoSansCJKkr-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-DemiLight.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +122,7 @@
 			children = (
 				CBF2CBEA2296B20C0039D3AC /* LaunchScreen.storyboard */,
 				CBF2CC01229E85930039D3AC /* Weather */,
-				CBF2CBE12296B2090039D3AC /* AppDelegate.swift */,
-				CBF2CBE82296B20C0039D3AC /* Assets.xcassets */,
-				CBF2CBED2296B20C0039D3AC /* Info.plist */,
+				CBF2CC0522A1235D0039D3AC /* Etc */,
 			);
 			path = Surf_Advisor_iOS;
 			sourceTree = "<group>";
@@ -137,6 +144,33 @@
 				CBF2CC03229EDB3A0039D3AC /* beachCollectionViewCell.swift */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		CBF2CC0522A1235D0039D3AC /* Etc */ = {
+			isa = PBXGroup;
+			children = (
+				CBF2CC0722A123BE0039D3AC /* Fonts */,
+				CBF2CBE12296B2090039D3AC /* AppDelegate.swift */,
+				CBF2CBE82296B20C0039D3AC /* Assets.xcassets */,
+				CBF2CBED2296B20C0039D3AC /* Info.plist */,
+			);
+			path = Etc;
+			sourceTree = "<group>";
+		};
+		CBF2CC0722A123BE0039D3AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CBF2CC0A22A123D90039D3AC /* NotoSansCJKkr-Black.otf */,
+				CBF2CC0C22A123DA0039D3AC /* NotoSansCJKkr-Bold.otf */,
+				CBF2CC1022A123DD0039D3AC /* NotoSansCJKkr-DemiLight.otf */,
+				CBF2CC0F22A123DC0039D3AC /* NotoSansCJKkr-Light.otf */,
+				CBF2CC0922A123D80039D3AC /* NotoSansCJKkr-Medium.otf */,
+				CBF2CC0E22A123DB0039D3AC /* NotoSansCJKkr-Regular.otf */,
+				CBF2CC0822A123D80039D3AC /* NotoSansCJKkr-Thin.otf */,
+				CBF2CC0D22A123DB0039D3AC /* NotoSansMonoCJKkr-Bold.otf */,
+				CBF2CC0B22A123DA0039D3AC /* NotoSansMonoCJKkr-Regular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
