@@ -8,6 +8,6 @@
 
 import UIKit
 
-class beachCollectionViewCell: UICollectionViewCell {
+class BeachCollectionViewCell: UICollectionViewCell {
     
 }

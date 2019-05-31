@@ -10,9 +10,11 @@ import UIKit
 
 class WeatherMainVC: UIViewController {
     @IBOutlet weak var beachCollectionView: UICollectionView!
-    
+    @IBOutlet weak var calendarCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.calendarCollectionView.delegate = self
+        self.calendarCollectionView.dataSource = self
         self.beachCollectionView.delegate = self
         self.beachCollectionView.dataSource = self
     }
@@ -20,13 +22,20 @@ class WeatherMainVC: UIViewController {
 
 extension WeatherMainVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 15
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         var cell = UICollectionViewCell()
-        if let beachCell = beachCollectionView.dequeueReusableCell(withReuseIdentifier: "beachCollectionViewCell", for: indexPath) as? beachCollectionViewCell {
-            cell = beachCell
+        
+        if collectionView == self.calendarCollectionView {
+            if let dateCell = self.calendarCollectionView.dequeueReusableCell(withReuseIdentifier: "DateCell", for: indexPath) as? DateCollectionViewCell {
+                cell = dateCell
+            }
+        } else if collectionView == self.beachCollectionView {
+            if let beachCell = self.beachCollectionView.dequeueReusableCell(withReuseIdentifier: "BeachCell", for: indexPath) as? BeachCollectionViewCell {
+                cell = beachCell
+            }
         }
         return cell
     }
