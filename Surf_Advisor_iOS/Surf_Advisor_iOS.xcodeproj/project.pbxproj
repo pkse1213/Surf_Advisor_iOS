@@ -9,14 +9,27 @@
 /* Begin PBXBuildFile section */
 		33467349638BFE3AB78D7A3A /* Pods_Surf_Advisor_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7090212BA92B43D2EC91E46B /* Pods_Surf_Advisor_iOS.framework */; };
 		B80D013D6CA51200D34F2338 /* Pods_Surf_Advisor_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4022B9C5E90AFDAD17C284 /* Pods_Surf_Advisor_iOSTests.framework */; };
+		CBB69B7722A13FEB006633AB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB69B7622A13FEB006633AB /* UIView+Extension.swift */; };
+		CBB69B8122A14184006633AB /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBB69B7822A1417F006633AB /* NotoSansCJKkr-Bold.otf */; };
+		CBB69B8222A14184006633AB /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBB69B7922A1417F006633AB /* NotoSansCJKkr-Medium.otf */; };
+		CBB69B8322A14184006633AB /* NotoSansCJKkr-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBB69B7A22A14180006633AB /* NotoSansCJKkr-Thin.otf */; };
+		CBB69B8422A14184006633AB /* NotoSansCJKkr-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBB69B7B22A14180006633AB /* NotoSansCJKkr-DemiLight.otf */; };
+		CBB69B8522A14184006633AB /* NotoSansMonoCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBB69B7C22A14181006633AB /* NotoSansMonoCJKkr-Bold.otf */; };
+		CBB69B8622A14184006633AB /* NotoSansMonoCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBB69B7D22A14182006633AB /* NotoSansMonoCJKkr-Regular.otf */; };
+		CBB69B8722A14184006633AB /* NotoSansCJKkr-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBB69B7E22A14182006633AB /* NotoSansCJKkr-Light.otf */; };
+		CBB69B8822A14184006633AB /* NotoSansCJKkr-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBB69B7F22A14184006633AB /* NotoSansCJKkr-Black.otf */; };
+		CBB69B8922A14184006633AB /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBB69B8022A14184006633AB /* NotoSansCJKkr-Regular.otf */; };
+		CBB69B9222A144E5006633AB /* BeachCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB69B9022A144E5006633AB /* BeachCollectionViewCell.swift */; };
+		CBB69B9322A144E5006633AB /* BeachCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB69B9122A144E5006633AB /* BeachCollectionViewCell.xib */; };
+		CBB69B9522A15024006633AB /* BeachListCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB69B9422A15024006633AB /* BeachListCollectionVC.swift */; };
+		CBB69B9A22A6E99B006633AB /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB69B9822A6E99B006633AB /* DateCollectionViewCell.swift */; };
+		CBB69B9B22A6E99B006633AB /* DateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB69B9922A6E99B006633AB /* DateCollectionViewCell.xib */; };
 		CBF2CBE22296B2090039D3AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2CBE12296B2090039D3AC /* AppDelegate.swift */; };
 		CBF2CBE42296B2090039D3AC /* WeatherMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2CBE32296B2090039D3AC /* WeatherMainVC.swift */; };
 		CBF2CBE72296B2090039D3AC /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF2CBE52296B2090039D3AC /* Weather.storyboard */; };
 		CBF2CBE92296B20C0039D3AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF2CBE82296B20C0039D3AC /* Assets.xcassets */; };
 		CBF2CBEC2296B20C0039D3AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF2CBEA2296B20C0039D3AC /* LaunchScreen.storyboard */; };
 		CBF2CBF72296B20C0039D3AC /* Surf_Advisor_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2CBF62296B20C0039D3AC /* Surf_Advisor_iOSTests.swift */; };
-		CBF2CC04229EDB3A0039D3AC /* beachCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2CC03229EDB3A0039D3AC /* beachCollectionViewCell.swift */; };
-		CBF2CC1222A12B440039D3AC /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2CC1122A12B440039D3AC /* DateCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,21 @@
 		82A4A2177D1FECF8F2836FCE /* Pods-Surf_Advisor_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surf_Advisor_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Surf_Advisor_iOS/Pods-Surf_Advisor_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A5F84E5DFE3047AA1FCA2CEC /* Pods-Surf_Advisor_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surf_Advisor_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Surf_Advisor_iOS/Pods-Surf_Advisor_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		BF4022B9C5E90AFDAD17C284 /* Pods_Surf_Advisor_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Surf_Advisor_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB69B7622A13FEB006633AB /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		CBB69B7822A1417F006633AB /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		CBB69B7922A1417F006633AB /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		CBB69B7A22A14180006633AB /* NotoSansCJKkr-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Thin.otf"; sourceTree = "<group>"; };
+		CBB69B7B22A14180006633AB /* NotoSansCJKkr-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-DemiLight.otf"; sourceTree = "<group>"; };
+		CBB69B7C22A14181006633AB /* NotoSansMonoCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMonoCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		CBB69B7D22A14182006633AB /* NotoSansMonoCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMonoCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		CBB69B7E22A14182006633AB /* NotoSansCJKkr-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Light.otf"; sourceTree = "<group>"; };
+		CBB69B7F22A14184006633AB /* NotoSansCJKkr-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Black.otf"; sourceTree = "<group>"; };
+		CBB69B8022A14184006633AB /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		CBB69B9022A144E5006633AB /* BeachCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBB69B9122A144E5006633AB /* BeachCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeachCollectionViewCell.xib; sourceTree = "<group>"; };
+		CBB69B9422A15024006633AB /* BeachListCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachListCollectionVC.swift; sourceTree = "<group>"; };
+		CBB69B9822A6E99B006633AB /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBB69B9922A6E99B006633AB /* DateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCollectionViewCell.xib; sourceTree = "<group>"; };
 		CBF2CBDE2296B2090039D3AC /* Surf_Advisor_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surf_Advisor_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF2CBE12296B2090039D3AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBF2CBE32296B2090039D3AC /* WeatherMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMainVC.swift; sourceTree = "<group>"; };
@@ -46,17 +74,6 @@
 		CBF2CBF22296B20C0039D3AC /* Surf_Advisor_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Surf_Advisor_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF2CBF62296B20C0039D3AC /* Surf_Advisor_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Surf_Advisor_iOSTests.swift; sourceTree = "<group>"; };
 		CBF2CBF82296B20C0039D3AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBF2CC03229EDB3A0039D3AC /* beachCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beachCollectionViewCell.swift; sourceTree = "<group>"; };
-		CBF2CC0822A123D80039D3AC /* NotoSansCJKkr-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Thin.otf"; sourceTree = "<group>"; };
-		CBF2CC0922A123D80039D3AC /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
-		CBF2CC0A22A123D90039D3AC /* NotoSansCJKkr-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Black.otf"; sourceTree = "<group>"; };
-		CBF2CC0B22A123DA0039D3AC /* NotoSansMonoCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMonoCJKkr-Regular.otf"; sourceTree = "<group>"; };
-		CBF2CC0C22A123DA0039D3AC /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
-		CBF2CC0D22A123DB0039D3AC /* NotoSansMonoCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMonoCJKkr-Bold.otf"; sourceTree = "<group>"; };
-		CBF2CC0E22A123DB0039D3AC /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
-		CBF2CC0F22A123DC0039D3AC /* NotoSansCJKkr-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Light.otf"; sourceTree = "<group>"; };
-		CBF2CC1022A123DD0039D3AC /* NotoSansCJKkr-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-DemiLight.otf"; sourceTree = "<group>"; };
-		CBF2CC1122A12B440039D3AC /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +116,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CBB69B7522A13FD2006633AB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CBB69B7622A13FEB006633AB /* UIView+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		CBF2CBD52296B2090039D3AC = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +149,7 @@
 			children = (
 				CBF2CBEA2296B20C0039D3AC /* LaunchScreen.storyboard */,
 				CBF2CC01229E85930039D3AC /* Weather */,
+				CBB69B7522A13FD2006633AB /* Utils */,
 				CBF2CC0522A1235D0039D3AC /* Etc */,
 			);
 			path = Surf_Advisor_iOS;
@@ -142,9 +168,12 @@
 			isa = PBXGroup;
 			children = (
 				CBF2CBE52296B2090039D3AC /* Weather.storyboard */,
+				CBB69B9422A15024006633AB /* BeachListCollectionVC.swift */,
+				CBB69B9822A6E99B006633AB /* DateCollectionViewCell.swift */,
+				CBB69B9922A6E99B006633AB /* DateCollectionViewCell.xib */,
 				CBF2CBE32296B2090039D3AC /* WeatherMainVC.swift */,
-				CBF2CC03229EDB3A0039D3AC /* beachCollectionViewCell.swift */,
-				CBF2CC1122A12B440039D3AC /* DateCollectionViewCell.swift */,
+				CBB69B9022A144E5006633AB /* BeachCollectionViewCell.swift */,
+				CBB69B9122A144E5006633AB /* BeachCollectionViewCell.xib */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -163,15 +192,15 @@
 		CBF2CC0722A123BE0039D3AC /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				CBF2CC0A22A123D90039D3AC /* NotoSansCJKkr-Black.otf */,
-				CBF2CC0C22A123DA0039D3AC /* NotoSansCJKkr-Bold.otf */,
-				CBF2CC1022A123DD0039D3AC /* NotoSansCJKkr-DemiLight.otf */,
-				CBF2CC0F22A123DC0039D3AC /* NotoSansCJKkr-Light.otf */,
-				CBF2CC0922A123D80039D3AC /* NotoSansCJKkr-Medium.otf */,
-				CBF2CC0E22A123DB0039D3AC /* NotoSansCJKkr-Regular.otf */,
-				CBF2CC0822A123D80039D3AC /* NotoSansCJKkr-Thin.otf */,
-				CBF2CC0D22A123DB0039D3AC /* NotoSansMonoCJKkr-Bold.otf */,
-				CBF2CC0B22A123DA0039D3AC /* NotoSansMonoCJKkr-Regular.otf */,
+				CBB69B7F22A14184006633AB /* NotoSansCJKkr-Black.otf */,
+				CBB69B7822A1417F006633AB /* NotoSansCJKkr-Bold.otf */,
+				CBB69B7B22A14180006633AB /* NotoSansCJKkr-DemiLight.otf */,
+				CBB69B7E22A14182006633AB /* NotoSansCJKkr-Light.otf */,
+				CBB69B7922A1417F006633AB /* NotoSansCJKkr-Medium.otf */,
+				CBB69B8022A14184006633AB /* NotoSansCJKkr-Regular.otf */,
+				CBB69B7A22A14180006633AB /* NotoSansCJKkr-Thin.otf */,
+				CBB69B7C22A14181006633AB /* NotoSansMonoCJKkr-Bold.otf */,
+				CBB69B7D22A14182006633AB /* NotoSansMonoCJKkr-Regular.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -260,9 +289,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB69B8422A14184006633AB /* NotoSansCJKkr-DemiLight.otf in Resources */,
+				CBB69B8922A14184006633AB /* NotoSansCJKkr-Regular.otf in Resources */,
 				CBF2CBEC2296B20C0039D3AC /* LaunchScreen.storyboard in Resources */,
+				CBB69B8822A14184006633AB /* NotoSansCJKkr-Black.otf in Resources */,
+				CBB69B9B22A6E99B006633AB /* DateCollectionViewCell.xib in Resources */,
+				CBB69B8522A14184006633AB /* NotoSansMonoCJKkr-Bold.otf in Resources */,
+				CBB69B8122A14184006633AB /* NotoSansCJKkr-Bold.otf in Resources */,
 				CBF2CBE92296B20C0039D3AC /* Assets.xcassets in Resources */,
+				CBB69B8722A14184006633AB /* NotoSansCJKkr-Light.otf in Resources */,
+				CBB69B8322A14184006633AB /* NotoSansCJKkr-Thin.otf in Resources */,
+				CBB69B8622A14184006633AB /* NotoSansMonoCJKkr-Regular.otf in Resources */,
 				CBF2CBE72296B2090039D3AC /* Weather.storyboard in Resources */,
+				CBB69B8222A14184006633AB /* NotoSansCJKkr-Medium.otf in Resources */,
+				CBB69B9322A144E5006633AB /* BeachCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,10 +393,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBF2CC1222A12B440039D3AC /* DateCollectionViewCell.swift in Sources */,
 				CBF2CBE42296B2090039D3AC /* WeatherMainVC.swift in Sources */,
-				CBF2CC04229EDB3A0039D3AC /* beachCollectionViewCell.swift in Sources */,
+				CBB69B7722A13FEB006633AB /* UIView+Extension.swift in Sources */,
 				CBF2CBE22296B2090039D3AC /* AppDelegate.swift in Sources */,
+				CBB69B9522A15024006633AB /* BeachListCollectionVC.swift in Sources */,
+				CBB69B9A22A6E99B006633AB /* DateCollectionViewCell.swift in Sources */,
+				CBB69B9222A144E5006633AB /* BeachCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
