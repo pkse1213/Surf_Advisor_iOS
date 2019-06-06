@@ -4,18 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>NotoSansCJKkr-Black</string>
-		<string>NotoSansCJKkr-Bold</string>
-		<string>NotoSansCJKkr-DemiLight</string>
-		<string>NotoSansCJKkr-Light</string>
-		<string>NotoSansCJKkr-Medium</string>
-		<string>NotoSansCJKkr-Regular</string>
-		<string>NotoSansMonoCJKkr-Bold</string>
-		<string>NotoSansMonoCJKkr-Regular</string>
-		<string>NotoSansCJKkr-Thin</string>
-	</array>
+	<key>CFBundleDisplayName</key>
+	<string>서핑어드바이저</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -32,6 +22,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NotoSansCJKkr-Black</string>
+		<string>NotoSansCJKkr-Bold</string>
+		<string>NotoSansCJKkr-DemiLight</string>
+		<string>NotoSansCJKkr-Light</string>
+		<string>NotoSansCJKkr-Medium</string>
+		<string>NotoSansCJKkr-Regular</string>
+		<string>NotoSansMonoCJKkr-Bold</string>
+		<string>NotoSansMonoCJKkr-Regular</string>
+		<string>NotoSansCJKkr-Thin</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

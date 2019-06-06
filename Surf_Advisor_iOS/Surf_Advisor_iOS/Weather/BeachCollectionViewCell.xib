@@ -132,7 +132,7 @@
                 <outlet property="levelInfoLabel" destination="cKU-8D-tBM" id="kGD-gP-8NP"/>
                 <outlet property="surfInfoLabel" destination="w0W-hn-z0U" id="pe3-dq-FkI"/>
             </connections>
-            <point key="canvasLocation" x="58.695652173913047" y="35.491071428571423"/>
+            <point key="canvasLocation" x="58.695652173913047" y="34.821428571428569"/>
         </collectionViewCell>
     </objects>
 </document>
