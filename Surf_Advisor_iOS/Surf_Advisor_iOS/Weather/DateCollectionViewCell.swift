@@ -17,25 +17,33 @@ class DateCollectionViewCell: UICollectionViewCell {
     var date: Date! {
         didSet { setUpView() }
     }
-    var row = 1
+    var item = 1
+    var selectedFlag = false {
+        didSet { setBoader() }
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
     
     private func setUpView() {
-        print(self.date)
         let calendar = Calendar.current
         let components = calendar.dateComponents([.month, .day, .weekday], from: date)
         
-        if components.day == 1 || row == 0{
+        if components.day == 1 || item == 0{
             self.monthLabel.text = "\(components.month!)월"
             self.monthLabel.isHidden = false
         } else {
             self.monthLabel.isHidden = true
         }
-        
-        if row == 0 {
+        self.dateLabel.text = "\(components.day!)"
+        self.dayLabel.text = weekday[components.weekday!-1]
+    }
+    
+    private func setBoader() {
+        if selectedFlag {
             self.circleView.applyRadius(radius: self.circleView.frame.height/2)
             self.circleView.applyBorder(width: 1, color: #colorLiteral(red: 0.3529411765, green: 0.3647058824, blue: 0.3764705882, alpha: 1))
             self.circleView.backgroundColor = #colorLiteral(red: 0.3529411765, green: 0.3647058824, blue: 0.3764705882, alpha: 1)
@@ -46,8 +54,5 @@ class DateCollectionViewCell: UICollectionViewCell {
             self.circleView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.dateLabel.textColor = #colorLiteral(red: 0.3529411765, green: 0.3647058824, blue: 0.3764705882, alpha: 1)
         }
-        
-        self.dateLabel.text = "\(components.day!)"
-        self.dayLabel.text = weekday[components.weekday!-1]
     }
 }

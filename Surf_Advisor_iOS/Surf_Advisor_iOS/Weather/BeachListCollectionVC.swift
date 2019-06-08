@@ -25,6 +25,11 @@ class BeachListCollectionVC: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+        self.navigationController?.isNavigationBarHidden = false
+    }
     /*
     // MARK: - Navigation
 
@@ -58,6 +63,10 @@ class BeachListCollectionVC: UICollectionViewController {
         return cell
     }
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "Weather", bundle: nil).instantiateViewController(withIdentifier: "BeachDetailInfoVC")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     // MARK: UICollectionViewDelegate
 
     /*

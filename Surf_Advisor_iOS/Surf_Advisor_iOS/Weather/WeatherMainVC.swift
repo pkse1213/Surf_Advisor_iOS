@@ -13,7 +13,7 @@ class WeatherMainVC: UIViewController {
     @IBOutlet weak var calendarCollectionView: UICollectionView!
     @IBOutlet weak var listBtnImageView: UIImageView!
     var date = Date()
-    
+    var selectedIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
@@ -38,6 +38,7 @@ class WeatherMainVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     @objc func listBtnTapped(_: UIImageView){
@@ -56,8 +57,13 @@ extension WeatherMainVC: UICollectionViewDelegate, UICollectionViewDataSource {
         
         if collectionView == self.calendarCollectionView {
             if let dateCell = self.calendarCollectionView.dequeueReusableCell(withReuseIdentifier: "DateCell", for: indexPath) as? DateCollectionViewCell {
-                dateCell.row = indexPath.row
+                dateCell.item = indexPath.item
                 dateCell.date = self.date + TimeInterval(86400*indexPath.row)
+                if indexPath.row == self.selectedIndex {
+                    dateCell.selectedFlag = true
+                } else {
+                    dateCell.selectedFlag = false
+                }
                 cell = dateCell
             }
         } else if collectionView == self.beachCollectionView {
@@ -67,5 +73,17 @@ extension WeatherMainVC: UICollectionViewDelegate, UICollectionViewDataSource {
         }
         return cell
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == self.beachCollectionView {
+            let vc = UIStoryboard(name: "Weather", bundle: nil).instantiateViewController(withIdentifier: "BeachDetailInfoVC")
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if collectionView == self.calendarCollectionView {
+//            if let cell = collectionView.cellForItem(at: indexPath) as? DateCollectionViewCell {
+                self.selectedIndex = indexPath.item
+                self.calendarCollectionView.reloadData()
+//            }
+        }
+    }
 }
+
